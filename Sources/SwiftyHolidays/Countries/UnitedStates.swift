@@ -136,6 +136,10 @@ final class UnitedStates: CountryWithStateBase<USState> {
         if year >= 1871 {
             builder.addHoliday("Independence Day", date: (.july, 4), checkObservance: true)
         }
+        
+        if year >= 2021 {
+            builder.addHoliday("Juneteenth", date: (.june, 19), checkObservance: true)
+        }
 
         if state == .utah && year >= 1849 {
             builder.addHoliday("Pioneer Day", date: (.july, 24), checkObservance: true)
